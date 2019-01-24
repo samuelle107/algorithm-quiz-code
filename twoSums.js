@@ -19,7 +19,7 @@ const sums = (arr, target) => {
         checkedSum[arr[i]] = arr[i];
     }
     return sums;
-}
+};
 
 // START HERE
 const arr = [4,2,5,1,3,7,-1];
