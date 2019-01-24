@@ -6,14 +6,15 @@ const sums = (arr, target) => {
     // Array that contains sums that add up to the target
     const sums = [];
 
-    for ( let i = 0; i < arr.length; i++) {
+    for ( let i = 0; i < arr.length; i++ ) {
         // Literally the target - the value of the current array index
-        const sumMinusElement = target - arr[i];
+        const sumMinusValue = target - arr[i];
 
-        // Check to see if sumMinusDifference exists in the array of checkedSums
-        if (checkedSum[sumMinusElement] !== undefined) {
+        // Check to see if sumMinusValue exists in the array of checkedSums
+        // If it exists in the array, that means that the sum has been found.
+        if (checkedSum[sumMinusValue] !== undefined) {
             // If it is, then push the value of the current index and the sumMinusElement into the array of sums that add to the target
-            sums.push([sumMinusElement, arr[i]]);
+            sums.push([sumMinusValue, arr[i]]);
         }
         // In the checkedSum array, make the key and value be the current array value
         checkedSum[arr[i]] = arr[i];
