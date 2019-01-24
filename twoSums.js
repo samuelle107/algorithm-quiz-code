@@ -1,4 +1,5 @@
 // Lambda/Arrow function
+// Worst case: O(n)
 const sums = (arr, target) => {
     // Create an array that holds all values that have been checked.
     const checkedSum = [];
